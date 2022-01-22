@@ -111,7 +111,21 @@ It's difficult to express how critically important it is for you to understand f
 
 ## Practice: Filling the Tank
 
-You have some starter code provided. It's a blank function that defines the task of filling your car up with gas. You can see that the minion will let you know that it filled up the car with gas, but **you** need to tell it how much gas you want put into the tank.
+### Setup
+
+Run the following command to set up your computer for this exercise.
+
+```sh
+cd ~/workspace
+mkdir functions-intro
+cd functions-intro
+touch main.js
+code .
+```
+
+Below, you have some starter code provided. It's a blank function that defines the task of filling your car up with gas. You can see that the minion will let you know that it filled up the car with gas, but **you** need to tell it how much gas you want put into the tank.
+
+Copy this code into the main module.
 
 > #### `workspace/functions-intro/main.js`
 
@@ -123,9 +137,15 @@ const fillGasTank = () => {
 fillGasTank(15)
 ```
 
-Since the minion needs information from you to do its job, you need to define the parameter of `gallons` inside the parenthesis. When you do that successfully, run the code and the minion will let you know when it completes the task.
+Since the minion needs information from you to do its job, you need to define the parameter of `gallons` inside the parenthesis. When you do that successfully, run the code in your terminal with the following command.
 
-Now change the **_argument_** value. It is currently 15. Change it to any other number and see how the behavior of the function changes when the argument does.
+```sh
+node main.js
+```
+
+The minion will let you know when it completes the task.
+
+Now change the **_argument_** value. It is currently 15. Change it to any other number and see how the behavior of the function changes when the argument does. Run your code again to see the different output.
 
 #### Helpful hint
 

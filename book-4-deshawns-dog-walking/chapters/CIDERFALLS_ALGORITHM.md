@@ -11,7 +11,9 @@ It is crucial, therefore, that you work on designing the algorithm before you wr
 1. What is the responsibility of each module?
 1. What functions should be in which modules?
 1. What is the responsibility of each function?
-1. What should each function return?
-1. What is the spcific algorithm for each function? Does the function need parameters? Should it return something?
+1. What is the specific algorithm for each function?
+    1. Does the function need parameters?
+    1. Does it need to iterate one, or more, arrays?
+    1. Should it return something? If so, what type of data should it return?
 
 Do all of this before you write a single line of code, or you could end up wasting hours of time writing code only to find that you need to throw it all away because you didn't design the algorithm first.
