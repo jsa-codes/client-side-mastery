@@ -18,14 +18,14 @@ Run the following commands to create the directory structure and files for the p
 cd ~/workspace
 mkdir veggish
 cd veggish
-touch main.js fishingBoat.js fishmonger.js farm.js grocer.js veggish.js
+touch main.js fishingBoat.js fishMonger.js farm.js grocer.js veggish.js
 ```
 
 Then initialize your Git repository and make your first commit.
 
 ```sh
 git init
-git add main.js fishingBoat.js fishmonger.js farm.js grocer.js veggish.js
+git add main.js fishingBoat.js fishMonger.js farm.js grocer.js veggish.js
 git commit -m "Initial commit"
 ```
 
@@ -46,7 +46,7 @@ Time to set up the fishing boat. First, you need to think about your data struct
 1. Here are the properties of each fish.
     1. Species
     1. Weight
-    1. Price
+    1. Price _(prices range from $3.00 to $10.00 per fish)_
     1. Amount _(how many of this species were caught today)_
 
 Open your `fishingBoat.js` module and write some comments describing the data structures that need to be created.
@@ -56,6 +56,13 @@ Next, the fishing boat must have a function that the other modules can invoke in
 1. What would be a good name for a variable to store this function?
 1. Does the function need any input to do its job, or does it have access to all the information it needs without a parameter?
 1. What would this function return?
+1. Make sure you put the `export` keyword in front of the function definition so that other modules can import the function and invoke it.
+    ```js
+    // Example
+    export const functionVariable = (goodParameterName) => {
+
+    }
+    ```
 
 Once you have the algorithm defined, commit it.
 
