@@ -14,7 +14,7 @@ echo -e "\nEnter email address you used for Github:"
 read -p "> " emailAddress
 echo -e "\nEnter your Github account name:"
 read -p "> " githubUsername
-echo -e "\nEnter github password for user $githubuser:"
+echo -e "\nEnter your Github Personal Access Token:"
 read -s -p "> " githubPassword
 
 
@@ -97,8 +97,9 @@ echo "@@   This installation might require your computer password.   @@"
 echo "@@                                                             @@"
 echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 
-NODE_VERSION=$(wget -qO- https://nodejs.org/dist/latest/ | sed -nE 's|.*>node-(.*)\.pkg</a>.*|\1|p')
-curl "https://nodejs.org/dist/latest/node-$NODE_VERSION.pkg" > "$HOME/Downloads/node-latest.pkg" && sudo installer -store -pkg "$HOME/Downloads/node-latest.pkg" -target "/"
+# NODE_VERSION=$(wget -qO- https://nodejs.org/dist/latest/ | sed -nE 's|.*>node-(.*)\.pkg</a>.*|\1|p')
+# curl "https://nodejs.org/dist/latest/node-$NODE_VERSION.pkg" > "$HOME/Downloads/node-latest.pkg" && sudo installer -store -pkg "$HOME/Downloads/node-latest.pkg" -target "/"
+brew install node
 
 
 # Install global dependencies
